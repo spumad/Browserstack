@@ -15,7 +15,7 @@ else:
 for i, t in enumerate(titles):
     try:
         translated_title = GoogleTranslator(source='auto', target='en').translate(t)
-        print(f"{i+1}. → {translated_title}")
+        print(f"{i+1}.{translated_title}")
         translated.append(translated_title)
     except Exception as e:
         print("Translation failed:", e)
